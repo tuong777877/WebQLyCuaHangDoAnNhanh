@@ -7,4 +7,5 @@
 <li> trang web giúp người dùng thuận tiện hơn trong việc đặt món ăn và thanh toán dễ dàng </li>
 
 ## Công nghệ sử dụng:
-<li> Asp .net framework 
+<li> Asp .net framework </li>
+<li> My SQL server </li>
