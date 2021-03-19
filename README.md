@@ -5,5 +5,5 @@
 
 # Mô tả đề tài
 <li> trang web giúp người dùng thuận tiện hơn trong việc đặt món ăn và thanh toán dễ dàng </li>
-# Công nghệ sử dụng:
+## Công nghệ sử dụng:
 <li> Asp .net framework 
