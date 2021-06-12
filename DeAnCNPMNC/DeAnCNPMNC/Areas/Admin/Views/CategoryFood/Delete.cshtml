@@ -1,0 +1,41 @@
+﻿@model DeAnCNPMNC.Models.CategoryFood
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CategoryFood</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCategoryFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCategoryFood)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

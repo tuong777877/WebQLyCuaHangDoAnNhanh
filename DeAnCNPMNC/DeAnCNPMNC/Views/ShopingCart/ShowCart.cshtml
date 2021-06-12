@@ -1,0 +1,72 @@
+﻿@model DeAnCNPMNC.Models.Cart
+
+@{
+    ViewBag.Title = "ShowCart";
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<h2>Gio Hang</h2>
+<a href="@Url.Action("Index","Menu")">Tiep tuc mua hang</a>
+@if (Model != null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Ten món ăn</th>
+                <th>Hinh ảnh món ăn</th>
+                <th>Giá</th>
+                <th>Số lượng</th>
+                <th>Thành tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Items)
+            {
+                decimal total = item._quantity * (decimal)item._food.PriceFood.Value;
+                <tr>
+                    <td>@Html.DisplayFor(model => item._food.NameFood)</td>
+                    <td><img src="@Url.Content(item._food.ImageFood)" height="50" width="50" /></td>
+                    <td>@Html.DisplayFor(model => item._food.PriceFood)</td>
+                    <td>
+                        @using (Html.BeginForm("Update_Cart_Quantity", "ShopingCart"))
+                        {
+                            <input type="hidden" value="@item._food.IDFood" name="idFood" />
+                            <input type="number" value="@item._quantity" name="cartQuantity" min="1"/>
+                            <input type="submit" value="Update" />
+                        }
+                    </td>
+                    <td>@total</td>
+                    <td>
+                        <a href="/ShopingCart/RemoveCart/@item._food.IDFood">Xóa</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" style="text-align:right">Tổng tiền : @Model.Total_money()</td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td colspan="4">
+                    @using (Html.BeginForm("CheckOut", "ShopingCart"))
+                    {
+                        <table style="border-collapse:separate;border-spacing:5px;">
+                            <tr>
+                                <td>
+                                    <input type="submit" value="CheckOut" class="btn btn-success" />
+                                    <a href="@Url.Action("Create","Customer")" class="btn btn-success">Register</a>
+                                </td>
+                            </tr>
+                        </table>
+                    }
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+}
+else
+{
+    @Html.Partial("Empty_Cart")
+}

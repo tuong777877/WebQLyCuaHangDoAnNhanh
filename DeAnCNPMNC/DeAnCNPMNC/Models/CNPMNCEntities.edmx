@@ -1,0 +1,619 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="CNPMFastFoodModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bill">
+          <Key>
+            <PropertyRef Name="IDBill" />
+          </Key>
+          <Property Name="IDBill" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DateOrder" Type="date" />
+          <Property Name="AccCustomer" Type="varchar" MaxLength="50" />
+          <Property Name="CouponName" Type="varchar" MaxLength="50" />
+          <Property Name="TotalBill" Type="float" />
+          <Property Name="AddressCus" Type="nvarchar(max)" />
+          <Property Name="Status" Type="bit" />
+        </EntityType>
+        <EntityType Name="CategoryCustomer">
+          <Key>
+            <PropertyRef Name="IDCateCus" />
+          </Key>
+          <Property Name="IDCateCus" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameCateCus" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CategoryFoods">
+          <Key>
+            <PropertyRef Name="IDCFood" />
+          </Key>
+          <Property Name="IDCFood" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="NameCategoryFood" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="CategoryUser">
+          <Key>
+            <PropertyRef Name="IDCUser" />
+          </Key>
+          <Property Name="IDCUser" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameCateUser" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Coupon">
+          <Key>
+            <PropertyRef Name="IDCoupon" />
+          </Key>
+          <Property Name="IDCoupon" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="NameCoupon" Type="nvarchar(max)" />
+          <Property Name="ImageCoupon" Type="varchar" MaxLength="50" />
+          <Property Name="discount" Type="float" />
+          <Property Name="Detail" Type="nvarchar(max)" />
+          <Property Name="DateStart" Type="date" />
+          <Property Name="DateEnd" Type="date" />
+          <Property Name="Quantity" Type="int" />
+        </EntityType>
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="AccountCustomer" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountCustomer" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PassCustomer" Type="varchar" MaxLength="50" />
+          <Property Name="NameCustomer" Type="nvarchar(max)" />
+          <Property Name="ImageCustomer" Type="varchar(max)" />
+          <Property Name="PhoneCustomer" Type="varchar" MaxLength="50" />
+          <Property Name="EmailCustomer" Type="varchar(max)" />
+          <Property Name="DateOfBirthCustomer" Type="date" />
+          <Property Name="AddressCustomer" Type="nvarchar(max)" />
+          <Property Name="SexCustomer" Type="bit" />
+          <Property Name="Point" Type="int" />
+          <Property Name="NameCateCustomer" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="DetailBill">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Amount" Type="int" />
+          <Property Name="NameFood" Type="varchar" MaxLength="20" />
+          <Property Name="BillName" Type="int" />
+          <Property Name="UnitPrice" Type="float" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="AccountEmp" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AccountEmp" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="PassEmp" Type="varchar" MaxLength="50" />
+          <Property Name="CateUser" Type="varchar" MaxLength="50" />
+          <Property Name="NameEmp" Type="nvarchar(max)" />
+          <Property Name="ImageEmp" Type="varchar(max)" />
+          <Property Name="PhoneEmp" Type="varchar" MaxLength="50" />
+          <Property Name="EmailEmp" Type="varchar(max)" />
+          <Property Name="DateOfBirthEmp" Type="date" />
+          <Property Name="AddressEmp" Type="nvarchar(max)" />
+          <Property Name="SexEmp" Type="bit" />
+        </EntityType>
+        <EntityType Name="Foods">
+          <Key>
+            <PropertyRef Name="IDFood" />
+          </Key>
+          <Property Name="IDFood" Type="varchar" MaxLength="20" Nullable="false" />
+          <Property Name="NameFood" Type="nvarchar(max)" />
+          <Property Name="ImageFood" Type="varchar" MaxLength="50" />
+          <Property Name="PriceFood" Type="float" />
+          <Property Name="StatusFood" Type="bit" />
+          <Property Name="CateFood" Type="varchar" MaxLength="20" />
+          <Property Name="QuantityFood" Type="int" />
+          <Property Name="DesFood" Type="nvarchar(max)" />
+          <Property Name="Trending" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <Association Name="FK_Bill_Coupon">
+          <End Role="Coupon" Type="Self.Coupon" Multiplicity="0..1" />
+          <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Coupon">
+              <PropertyRef Name="IDCoupon" />
+            </Principal>
+            <Dependent Role="Bill">
+              <PropertyRef Name="CouponName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Bill_Customer">
+          <End Role="Customers" Type="Self.Customers" Multiplicity="0..1" />
+          <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="AccountCustomer" />
+            </Principal>
+            <Dependent Role="Bill">
+              <PropertyRef Name="AccCustomer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customer_RoleCustomer">
+          <End Role="CategoryCustomer" Type="Self.CategoryCustomer" Multiplicity="0..1" />
+          <End Role="Customers" Type="Self.Customers" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryCustomer">
+              <PropertyRef Name="IDCateCus" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="NameCateCustomer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetailBill_Bill">
+          <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+          <End Role="DetailBill" Type="Self.DetailBill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bill">
+              <PropertyRef Name="IDBill" />
+            </Principal>
+            <Dependent Role="DetailBill">
+              <PropertyRef Name="BillName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetailBill_Food">
+          <End Role="Foods" Type="Self.Foods" Multiplicity="0..1" />
+          <End Role="DetailBill" Type="Self.DetailBill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Foods">
+              <PropertyRef Name="IDFood" />
+            </Principal>
+            <Dependent Role="DetailBill">
+              <PropertyRef Name="NameFood" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_CateUser">
+          <End Role="CategoryUser" Type="Self.CategoryUser" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryUser">
+              <PropertyRef Name="IDCUser" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="CateUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Food_CateFood">
+          <End Role="CategoryFoods" Type="Self.CategoryFoods" Multiplicity="0..1" />
+          <End Role="Foods" Type="Self.Foods" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryFoods">
+              <PropertyRef Name="IDCFood" />
+            </Principal>
+            <Dependent Role="Foods">
+              <PropertyRef Name="CateFood" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CNPMFastFoodModelStoreContainer">
+          <EntitySet Name="Bill" EntityType="Self.Bill" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryCustomer" EntityType="Self.CategoryCustomer" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryFoods" EntityType="Self.CategoryFoods" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="CategoryUser" EntityType="Self.CategoryUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Coupon" EntityType="Self.Coupon" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Customers" EntityType="Self.Customers" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DetailBill" EntityType="Self.DetailBill" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Employee" EntityType="Self.Employee" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Foods" EntityType="Self.Foods" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_Bill_Coupon" Association="Self.FK_Bill_Coupon">
+            <End Role="Coupon" EntitySet="Coupon" />
+            <End Role="Bill" EntitySet="Bill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Bill_Customer" Association="Self.FK_Bill_Customer">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="Bill" EntitySet="Bill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customer_RoleCustomer" Association="Self.FK_Customer_RoleCustomer">
+            <End Role="CategoryCustomer" EntitySet="CategoryCustomer" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetailBill_Bill" Association="Self.FK_DetailBill_Bill">
+            <End Role="Bill" EntitySet="Bill" />
+            <End Role="DetailBill" EntitySet="DetailBill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetailBill_Food" Association="Self.FK_DetailBill_Food">
+            <End Role="Foods" EntitySet="Foods" />
+            <End Role="DetailBill" EntitySet="DetailBill" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_CateUser" Association="Self.FK_Employee_CateUser">
+            <End Role="CategoryUser" EntitySet="CategoryUser" />
+            <End Role="Employee" EntitySet="Employee" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Food_CateFood" Association="Self.FK_Food_CateFood">
+            <End Role="CategoryFoods" EntitySet="CategoryFoods" />
+            <End Role="Foods" EntitySet="Foods" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CNPMFastFoodModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Bill">
+          <Key>
+            <PropertyRef Name="IDBill" />
+          </Key>
+          <Property Name="IDBill" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DateOrder" Type="DateTime" Precision="0" />
+          <Property Name="AccCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CouponName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="TotalBill" Type="Double" />
+          <Property Name="AddressCus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Coupon" Relationship="Self.FK_Bill_Coupon" FromRole="Bill" ToRole="Coupon" />
+          <NavigationProperty Name="Customer" Relationship="Self.FK_Bill_Customer" FromRole="Bill" ToRole="Customers" />
+          <NavigationProperty Name="DetailBills" Relationship="Self.FK_DetailBill_Bill" FromRole="Bill" ToRole="DetailBill" />
+          <Property Name="Status" Type="Boolean" />
+        </EntityType>
+        <EntityType Name="CategoryCustomer">
+          <Key>
+            <PropertyRef Name="IDCateCus" />
+          </Key>
+          <Property Name="IDCateCus" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameCateCus" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Customers" Relationship="Self.FK_Customer_RoleCustomer" FromRole="CategoryCustomer" ToRole="Customers" />
+        </EntityType>
+        <EntityType Name="CategoryFood">
+          <Key>
+            <PropertyRef Name="IDCFood" />
+          </Key>
+          <Property Name="IDCFood" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameCategoryFood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Foods" Relationship="Self.FK_Food_CateFood" FromRole="CategoryFoods" ToRole="Foods" />
+        </EntityType>
+        <EntityType Name="CategoryUser">
+          <Key>
+            <PropertyRef Name="IDCUser" />
+          </Key>
+          <Property Name="IDCUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameCateUser" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Employees" Relationship="Self.FK_Employee_CateUser" FromRole="CategoryUser" ToRole="Employee" />
+        </EntityType>
+        <EntityType Name="Coupon">
+          <Key>
+            <PropertyRef Name="IDCoupon" />
+          </Key>
+          <Property Name="IDCoupon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameCoupon" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageCoupon" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="discount" Type="Double" />
+          <Property Name="Detail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="DateStart" Type="DateTime" Precision="0" />
+          <Property Name="DateEnd" Type="DateTime" Precision="0" />
+          <Property Name="Quantity" Type="Int32" />
+          <NavigationProperty Name="Bills" Relationship="Self.FK_Bill_Coupon" FromRole="Coupon" ToRole="Bill" />
+        </EntityType>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="AccountCustomer" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PassCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NameCustomer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageCustomer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmailCustomer" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfBirthCustomer" Type="DateTime" Precision="0" />
+          <Property Name="AddressCustomer" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SexCustomer" Type="Boolean" />
+          <Property Name="Point" Type="Int32" />
+          <Property Name="NameCateCustomer" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Bills" Relationship="Self.FK_Bill_Customer" FromRole="Customers" ToRole="Bill" />
+          <NavigationProperty Name="CategoryCustomer" Relationship="Self.FK_Customer_RoleCustomer" FromRole="Customers" ToRole="CategoryCustomer" />
+        </EntityType>
+        <EntityType Name="DetailBill">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Amount" Type="Int32" />
+          <Property Name="NameFood" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="BillName" Type="Int32" />
+          <Property Name="UnitPrice" Type="Double" />
+          <NavigationProperty Name="Bill" Relationship="Self.FK_DetailBill_Bill" FromRole="DetailBill" ToRole="Bill" />
+          <NavigationProperty Name="Food" Relationship="Self.FK_DetailBill_Food" FromRole="DetailBill" ToRole="Foods" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="AccountEmp" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AccountEmp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="PassEmp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="CateUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="NameEmp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageEmp" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="PhoneEmp" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="EmailEmp" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DateOfBirthEmp" Type="DateTime" Precision="0" />
+          <Property Name="AddressEmp" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="SexEmp" Type="Boolean" />
+          <NavigationProperty Name="CategoryUser" Relationship="Self.FK_Employee_CateUser" FromRole="Employee" ToRole="CategoryUser" />
+        </EntityType>
+        <EntityType Name="Food">
+          <Key>
+            <PropertyRef Name="IDFood" />
+          </Key>
+          <Property Name="IDFood" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="NameFood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="ImageFood" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="PriceFood" Type="Double" />
+          <Property Name="StatusFood" Type="Boolean" />
+          <Property Name="CateFood" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="QuantityFood" Type="Int32" />
+          <Property Name="DesFood" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="CategoryFood" Relationship="Self.FK_Food_CateFood" FromRole="Foods" ToRole="CategoryFoods" />
+          <NavigationProperty Name="DetailBills" Relationship="Self.FK_DetailBill_Food" FromRole="Foods" ToRole="DetailBill" />
+          <Property Name="Trending" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <Association Name="FK_Bill_Coupon">
+          <End Role="Coupon" Type="Self.Coupon" Multiplicity="0..1" />
+          <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Coupon">
+              <PropertyRef Name="IDCoupon" />
+            </Principal>
+            <Dependent Role="Bill">
+              <PropertyRef Name="CouponName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Bill_Customer">
+          <End Role="Customers" Type="Self.Customer" Multiplicity="0..1" />
+          <End Role="Bill" Type="Self.Bill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Customers">
+              <PropertyRef Name="AccountCustomer" />
+            </Principal>
+            <Dependent Role="Bill">
+              <PropertyRef Name="AccCustomer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetailBill_Bill">
+          <End Role="Bill" Type="Self.Bill" Multiplicity="0..1" />
+          <End Role="DetailBill" Type="Self.DetailBill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Bill">
+              <PropertyRef Name="IDBill" />
+            </Principal>
+            <Dependent Role="DetailBill">
+              <PropertyRef Name="BillName" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Customer_RoleCustomer">
+          <End Role="CategoryCustomer" Type="Self.CategoryCustomer" Multiplicity="0..1" />
+          <End Role="Customers" Type="Self.Customer" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryCustomer">
+              <PropertyRef Name="IDCateCus" />
+            </Principal>
+            <Dependent Role="Customers">
+              <PropertyRef Name="NameCateCustomer" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Food_CateFood">
+          <End Role="CategoryFoods" Type="Self.CategoryFood" Multiplicity="0..1" />
+          <End Role="Foods" Type="Self.Food" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryFoods">
+              <PropertyRef Name="IDCFood" />
+            </Principal>
+            <Dependent Role="Foods">
+              <PropertyRef Name="CateFood" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Employee_CateUser">
+          <End Role="CategoryUser" Type="Self.CategoryUser" Multiplicity="0..1" />
+          <End Role="Employee" Type="Self.Employee" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CategoryUser">
+              <PropertyRef Name="IDCUser" />
+            </Principal>
+            <Dependent Role="Employee">
+              <PropertyRef Name="CateUser" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DetailBill_Food">
+          <End Role="Foods" Type="Self.Food" Multiplicity="0..1" />
+          <End Role="DetailBill" Type="Self.DetailBill" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Foods">
+              <PropertyRef Name="IDFood" />
+            </Principal>
+            <Dependent Role="DetailBill">
+              <PropertyRef Name="NameFood" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="CNPMFastFoodEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bills" EntityType="Self.Bill" />
+          <EntitySet Name="CategoryCustomers" EntityType="Self.CategoryCustomer" />
+          <EntitySet Name="CategoryFoods" EntityType="Self.CategoryFood" />
+          <EntitySet Name="CategoryUsers" EntityType="Self.CategoryUser" />
+          <EntitySet Name="Coupons" EntityType="Self.Coupon" />
+          <EntitySet Name="Customers" EntityType="Self.Customer" />
+          <EntitySet Name="DetailBills" EntityType="Self.DetailBill" />
+          <EntitySet Name="Employees" EntityType="Self.Employee" />
+          <EntitySet Name="Foods" EntityType="Self.Food" />
+          <AssociationSet Name="FK_Bill_Coupon" Association="Self.FK_Bill_Coupon">
+            <End Role="Coupon" EntitySet="Coupons" />
+            <End Role="Bill" EntitySet="Bills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Bill_Customer" Association="Self.FK_Bill_Customer">
+            <End Role="Customers" EntitySet="Customers" />
+            <End Role="Bill" EntitySet="Bills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetailBill_Bill" Association="Self.FK_DetailBill_Bill">
+            <End Role="Bill" EntitySet="Bills" />
+            <End Role="DetailBill" EntitySet="DetailBills" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Customer_RoleCustomer" Association="Self.FK_Customer_RoleCustomer">
+            <End Role="CategoryCustomer" EntitySet="CategoryCustomers" />
+            <End Role="Customers" EntitySet="Customers" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Food_CateFood" Association="Self.FK_Food_CateFood">
+            <End Role="CategoryFoods" EntitySet="CategoryFoods" />
+            <End Role="Foods" EntitySet="Foods" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Employee_CateUser" Association="Self.FK_Employee_CateUser">
+            <End Role="CategoryUser" EntitySet="CategoryUsers" />
+            <End Role="Employee" EntitySet="Employees" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DetailBill_Food" Association="Self.FK_DetailBill_Food">
+            <End Role="Foods" EntitySet="Foods" />
+            <End Role="DetailBill" EntitySet="DetailBills" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CNPMFastFoodModelStoreContainer" CdmEntityContainer="CNPMFastFoodEntities">
+          <EntitySetMapping Name="Bills">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.Bill">
+              <MappingFragment StoreEntitySet="Bill">
+                <ScalarProperty Name="Status" ColumnName="Status" />
+                <ScalarProperty Name="IDBill" ColumnName="IDBill" />
+                <ScalarProperty Name="DateOrder" ColumnName="DateOrder" />
+                <ScalarProperty Name="AccCustomer" ColumnName="AccCustomer" />
+                <ScalarProperty Name="CouponName" ColumnName="CouponName" />
+                <ScalarProperty Name="TotalBill" ColumnName="TotalBill" />
+                <ScalarProperty Name="AddressCus" ColumnName="AddressCus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoryCustomers">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.CategoryCustomer">
+              <MappingFragment StoreEntitySet="CategoryCustomer">
+                <ScalarProperty Name="IDCateCus" ColumnName="IDCateCus" />
+                <ScalarProperty Name="NameCateCus" ColumnName="NameCateCus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoryFoods">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.CategoryFood">
+              <MappingFragment StoreEntitySet="CategoryFoods">
+                <ScalarProperty Name="IDCFood" ColumnName="IDCFood" />
+                <ScalarProperty Name="NameCategoryFood" ColumnName="NameCategoryFood" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="CategoryUsers">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.CategoryUser">
+              <MappingFragment StoreEntitySet="CategoryUser">
+                <ScalarProperty Name="IDCUser" ColumnName="IDCUser" />
+                <ScalarProperty Name="NameCateUser" ColumnName="NameCateUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Coupons">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.Coupon">
+              <MappingFragment StoreEntitySet="Coupon">
+                <ScalarProperty Name="IDCoupon" ColumnName="IDCoupon" />
+                <ScalarProperty Name="NameCoupon" ColumnName="NameCoupon" />
+                <ScalarProperty Name="ImageCoupon" ColumnName="ImageCoupon" />
+                <ScalarProperty Name="discount" ColumnName="discount" />
+                <ScalarProperty Name="Detail" ColumnName="Detail" />
+                <ScalarProperty Name="DateStart" ColumnName="DateStart" />
+                <ScalarProperty Name="DateEnd" ColumnName="DateEnd" />
+                <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Customers">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.Customer">
+              <MappingFragment StoreEntitySet="Customers">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AccountCustomer" ColumnName="AccountCustomer" />
+                <ScalarProperty Name="PassCustomer" ColumnName="PassCustomer" />
+                <ScalarProperty Name="NameCustomer" ColumnName="NameCustomer" />
+                <ScalarProperty Name="ImageCustomer" ColumnName="ImageCustomer" />
+                <ScalarProperty Name="PhoneCustomer" ColumnName="PhoneCustomer" />
+                <ScalarProperty Name="EmailCustomer" ColumnName="EmailCustomer" />
+                <ScalarProperty Name="DateOfBirthCustomer" ColumnName="DateOfBirthCustomer" />
+                <ScalarProperty Name="AddressCustomer" ColumnName="AddressCustomer" />
+                <ScalarProperty Name="SexCustomer" ColumnName="SexCustomer" />
+                <ScalarProperty Name="Point" ColumnName="Point" />
+                <ScalarProperty Name="NameCateCustomer" ColumnName="NameCateCustomer" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetailBills">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.DetailBill">
+              <MappingFragment StoreEntitySet="DetailBill">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Amount" ColumnName="Amount" />
+                <ScalarProperty Name="NameFood" ColumnName="NameFood" />
+                <ScalarProperty Name="BillName" ColumnName="BillName" />
+                <ScalarProperty Name="UnitPrice" ColumnName="UnitPrice" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AccountEmp" ColumnName="AccountEmp" />
+                <ScalarProperty Name="PassEmp" ColumnName="PassEmp" />
+                <ScalarProperty Name="CateUser" ColumnName="CateUser" />
+                <ScalarProperty Name="NameEmp" ColumnName="NameEmp" />
+                <ScalarProperty Name="ImageEmp" ColumnName="ImageEmp" />
+                <ScalarProperty Name="PhoneEmp" ColumnName="PhoneEmp" />
+                <ScalarProperty Name="EmailEmp" ColumnName="EmailEmp" />
+                <ScalarProperty Name="DateOfBirthEmp" ColumnName="DateOfBirthEmp" />
+                <ScalarProperty Name="AddressEmp" ColumnName="AddressEmp" />
+                <ScalarProperty Name="SexEmp" ColumnName="SexEmp" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Foods">
+            <EntityTypeMapping TypeName="CNPMFastFoodModel.Food">
+              <MappingFragment StoreEntitySet="Foods">
+                <ScalarProperty Name="Trending" ColumnName="Trending" />
+                <ScalarProperty Name="IDFood" ColumnName="IDFood" />
+                <ScalarProperty Name="NameFood" ColumnName="NameFood" />
+                <ScalarProperty Name="ImageFood" ColumnName="ImageFood" />
+                <ScalarProperty Name="PriceFood" ColumnName="PriceFood" />
+                <ScalarProperty Name="StatusFood" ColumnName="StatusFood" />
+                <ScalarProperty Name="CateFood" ColumnName="CateFood" />
+                <ScalarProperty Name="QuantityFood" ColumnName="QuantityFood" />
+                <ScalarProperty Name="DesFood" ColumnName="DesFood" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

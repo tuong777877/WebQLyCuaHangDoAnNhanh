@@ -1,0 +1,70 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.Bill>
+
+@{
+    ViewBag.Title = "DSBill";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Danh sách hóa đơn</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDBill)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateOrder)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccCustomer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AddressCus)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TotalBill)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDBill)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateOrder)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccCustomer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AddressCus)
+            </td>
+            <td>
+                @if (item.Status == true)
+                {
+                    <a>Đã phục vụ</a>
+                }
+                else
+                {
+                    <a>Chưa phục vụ</a>
+                }
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalBill)
+            </td>
+            <td>
+                @*@Html.ActionLink("Sửa hóa đơn", "Edit", new { Id = item.IDBill }) |*@
+                @Html.ActionLink("Sửa tình trạng", "EditBill", new { Id = item.IDBill }) |
+                @Html.ActionLink("Chi tiết hóa đơn", "DetailsNV", new { Id = item.IDBill })
+            </td>
+        </tr>
+    }
+
+</table>
+

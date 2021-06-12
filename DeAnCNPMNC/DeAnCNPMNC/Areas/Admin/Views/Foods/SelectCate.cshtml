@@ -1,0 +1,6 @@
+﻿@model DeAnCNPMNC.Models.CategoryFood
+
+    @Html.DropDownListFor(model => model.IDCFood, 
+    new SelectList(Model.ListCate.OrderBy(model => model.NameCategoryFood), "IDCFood", "NameCategoryFood"), "--Select Cate Food--")
+
+

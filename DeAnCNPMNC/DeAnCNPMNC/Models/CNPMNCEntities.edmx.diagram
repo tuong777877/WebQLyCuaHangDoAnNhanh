@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="50c0a40b66bb42e0bd841344d296a1ef" Name="Diagram1">
+        <EntityTypeShape EntityType="CNPMFastFoodModel.Bill" Width="1.5" PointX="5.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.CategoryCustomer" Width="1.5" PointX="0.75" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.CategoryFood" Width="1.5" PointX="3" PointY="10.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.CategoryUser" Width="1.5" PointX="7.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.Coupon" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.Customer" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.DetailBill" Width="1.5" PointX="7.5" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.Employee" Width="1.5" PointX="10" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="CNPMFastFoodModel.Food" Width="1.5" PointX="5.25" PointY="9.375" IsExpanded="true" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_Bill_Coupon" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_Bill_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_DetailBill_Bill" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_Customer_RoleCustomer" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_Food_CateFood" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_Employee_CateUser" ManuallyRouted="false" />
+        <AssociationConnector Association="CNPMFastFoodModel.FK_DetailBill_Food" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.Coupon>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDCoupon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameCoupon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageCoupon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.discount)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Detail)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateStart)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DateEnd)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Quantity)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDCoupon)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameCoupon)
+            </td>
+            <td>
+                <img src="@Url.Content(item.ImageCoupon)" height="50" width"50" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Detail)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateStart)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DateEnd)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { idcou = item.IDCoupon }) |
+                @Html.ActionLink("Details", "Details", new { idcou = item.IDCoupon }) |
+                @Html.ActionLink("Delete", "Delete", new { idcou = item.IDCoupon })
+            </td>
+        </tr>
+    }
+
+</table>

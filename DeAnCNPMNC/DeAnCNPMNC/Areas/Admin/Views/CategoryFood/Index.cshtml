@@ -1,0 +1,39 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.CategoryFood>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Category Food</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model=>model.IDCFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameCategoryFood)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(model=>item.IDCFood)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameCategoryFood)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDCFood }) |
+            @Html.ActionLink("Details", "Details", new { id=item.IDCFood }) @*|
+            @Html.ActionLink("Delete", "Delete", new { id=item.IDCFood })*@
+        </td>
+    </tr>
+}
+
+</table>

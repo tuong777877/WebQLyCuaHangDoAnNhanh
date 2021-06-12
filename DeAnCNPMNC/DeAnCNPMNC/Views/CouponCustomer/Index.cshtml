@@ -1,0 +1,85 @@
+﻿@*@model IEnumerable<DeAnCNPMNC.Models.Coupon>*@
+@using DeAnCNPMNC.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Coupon>
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<section class="item content">
+    <div class="container">
+        <div class="underlined-title">
+            <div class="editContent">
+                <h1 class="text-center latestitems">DISCOUNT</h1>
+            </div>
+            <div class="wow-hr type_short">
+                <span class="wow-hr-h">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            @foreach (var _coup in Model)
+            {
+                <div class="col-md-4">
+                    <div class="productbox">
+                        <div class="fadeshop">
+                            <div class="captionshop text-center" style="display: none;">
+                                <h3>@Html.DisplayFor(modelItem => _coup.IDCoupon)</h3>
+                                <p>
+                                    @Html.DisplayFor(modelItem => _coup.NameCoupon)
+                                </p>
+                                <p>
+                                    @Html.DisplayFor(modelItem => _coup.Detail)
+                                </p>
+                                <p>
+                                    @Html.DisplayFor(modelItem => _coup.discount)
+                                </p>
+                            </div>
+                            <span class="maxproduct"><img src="@Url.Content(_coup.ImageCoupon)" alt="" style="height:350px; width:350px"></span>
+                        </div>
+                        <div class="product-details">
+                            <a href="#">
+                                <h1>@Html.DisplayFor(modelItem => _coup.IDCoupon)</h1>
+                            </a>
+                            <span class="price">
+                                <span class="edd_price">@Html.DisplayFor(modelItem => _coup.NameCoupon)</span>
+                            </span>
+                            @if (_coup.Quantity <= 1 || _coup.DateStart > _coup.DateEnd)
+                            {
+                                <p style="color:red">hết mã giảm giá</p>
+                                <p>
+                                    <a href="/ShopingCart/AddToCart/@_coup.IDCoupon" class="learn-more detailslearn" onclick="false"><i class="fa fa-shopping-cart"></i> Áp dụng</a>
+                                </p>
+                            }
+                            else if (_coup.DateStart > DateTime.Now)
+                            {
+                                <p style="display:none">Số lượng @Html.DisplayFor(modelItem => _coup.Quantity)</p>
+                                <p style="color:red">Mã giảm giá chưa kích hoạt</p>
+                                <p>
+                                    <a href="/ShopingCart/AddToCart/@_coup.IDCoupon" class="learn-more detailslearn" onclick="false"><i class="fa fa-shopping-cart"></i> Áp dụng</a>
+                                </p>
+                            }
+                            else if (_coup.Quantity > 1 || (_coup.DateStart <= DateTime.Now || _coup.DateStart <= _coup.DateEnd))
+                            {
+                                <p>Mã giảm giá đang kích hoạt</p>
+                                <p>
+                                    <a href="/ShopingCart/AddToCart/@_coup.IDCoupon" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i>Áp dụng</a>
+                                </p>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div style="text-align:center">
+        Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        <div>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+        </div>
+        <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+    </div>
+</section>
+<br />

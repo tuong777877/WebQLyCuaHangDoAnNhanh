@@ -1,0 +1,107 @@
+﻿@model DeAnCNPMNC.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CateUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageEmp)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ImageEmp)" height="100" width="100" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirthEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirthEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressEmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressEmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SexEmp)
+        </dt>
+
+        <dd>
+            @if (Model.SexEmp == true)
+            {<text>Nam</text>}
+            else if (Model.SexEmp == false)
+            {
+                <text>Nữ</text>
+            }
+            else
+            {
+                <text>Khác</text>
+            }
+        </dd>
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { accemp = Model.AccountEmp }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

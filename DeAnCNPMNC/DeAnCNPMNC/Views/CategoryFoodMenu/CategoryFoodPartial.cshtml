@@ -1,0 +1,37 @@
+﻿@using DeAnCNPMNC.Models
+@model List<CategoryFood>
+
+<style>
+    #div-u {
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: white;
+        color: black;
+        border: 2px solid crimson;
+    }
+
+        #div-u:hover {
+            background-color: crimson;
+            color: white;
+        }
+</style>
+<div style="text-align:center;">
+    @{
+        foreach (var item in Model)
+        {
+            <button id="div-u">
+                @Html.ActionLink(item.NameCategoryFood, "Index", "Menu", new { category = item.IDCFood.Trim() }, "")
+            </button>
+        }
+    }
+</div>
+

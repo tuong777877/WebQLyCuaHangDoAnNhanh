@@ -1,0 +1,35 @@
+﻿@model DeAnCNPMNC.Models.CategoryUser
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CategoryUser</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCateUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCateUser)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.IDCUser }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

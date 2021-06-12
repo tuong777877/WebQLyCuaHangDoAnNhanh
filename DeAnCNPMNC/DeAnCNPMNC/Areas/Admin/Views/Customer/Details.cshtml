@@ -1,0 +1,116 @@
+﻿@model DeAnCNPMNC.Models.Customer
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Customer</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AccountCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AccountCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PassCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PassCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageCustomer)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ImageCustomer)" height="50" width"50" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PhoneCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PhoneCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateOfBirthCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateOfBirthCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AddressCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AddressCustomer)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.SexCustomer)
+        </dt>
+
+        <dd>
+            @if (Model.SexCustomer == true)
+            {<text>Nam</text>}
+            else if (Model.SexCustomer == false)
+            {
+                <text>Nữ</text>
+            }
+            else
+            {
+                <text>Khác</text>
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Point)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Point)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCateCustomer)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCateCustomer)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

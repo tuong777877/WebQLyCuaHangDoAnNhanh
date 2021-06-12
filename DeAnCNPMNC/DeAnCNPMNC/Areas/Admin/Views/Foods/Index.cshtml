@@ -1,0 +1,98 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.Food>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IDFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameFood)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.PriceFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StatusFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CateFood)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QuantityFood)
+        </th>
+        <th style="display:none">
+            @Html.DisplayNameFor(model => model.DesFood)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@Url.Content(item.ImageFood)" height="50" width"50" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IDFood)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameFood)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.PriceFood)
+            </td>
+            <td>
+                @if (item.StatusFood == true)
+                {
+                <text>còn hàng</text>
+                }
+                else
+                {
+                <text>hết hàng</text>
+                }
+
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CateFood)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.QuantityFood)
+            </td>
+            <td style="display:none">
+                @Html.DisplayFor(modelItem => item.DesFood)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.IDFood }) |
+                @Html.ActionLink("Details", "Details", new { id = item.IDFood }) @*|*@
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.IDFood })*@
+            </td>
+        </tr>
+    }
+</table>
+<script>
+    ClassicEditor
+        .create(document.querySelector('#editor'), {
+            // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+        })
+        .then(editor => {
+            window.editor = editor;
+        })
+        .catch(err => {
+            console.error(err.stack);
+        });
+</script>

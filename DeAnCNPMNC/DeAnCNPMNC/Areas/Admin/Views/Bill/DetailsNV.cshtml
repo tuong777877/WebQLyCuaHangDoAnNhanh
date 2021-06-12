@@ -1,0 +1,78 @@
+﻿@model DeAnCNPMNC.Models.DetailBill
+
+@{
+    ViewBag.Title = "DetailsNV";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<div>
+    <h1 class="col-12" style="text-align:center">Chi tiết hóa đơn</h1>
+    <hr />
+
+    @using (var context = new DeAnCNPMNC.Models.CNPMFastFoodEntities())
+    {
+        foreach (var item in context.DetailBills.Where(s => s.BillName.ToString().Contains(Model.ID.ToString())).ToList())
+        {
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayNameFor(model => item.ID)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayFor(model => item.ID)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayNameFor(model => item.BillName)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayFor(model => item.BillName)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayNameFor(model => item.NameFood)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayFor(model => item.NameFood)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayNameFor(model => item.Amount)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayFor(model => item.Amount)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayNameFor(model => item.UnitPrice)
+                </a>
+            </div>
+            <div class="col-12" style="text-align:center">
+                <a>
+                    @Html.DisplayFor(model => item.UnitPrice)
+                </a>
+            </div>
+        }
+    }
+
+    <div class="col-12" style="text-align:center">
+        <a>
+            Chúc quý khách ngon miệng!
+        </a>
+    </div>
+
+</div>
+<p>
+    <a href="~/Admin/Bill/DSBill" class="btn btn-default" style="margin-left:10px">Quay lại</a>
+</p>

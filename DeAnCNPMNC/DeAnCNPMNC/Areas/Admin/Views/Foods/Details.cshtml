@@ -1,0 +1,103 @@
+﻿@model DeAnCNPMNC.Models.Food
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Food</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NameFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ImageFood)
+        </dt>
+
+        <dd>
+            <img src="@Url.Content(Model.ImageFood)" height="150" width"150" />
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PriceFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PriceFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusFood)
+        </dt>
+
+        <dd>
+            @if (Model.StatusFood == true)
+            {
+                <text>còn hàng</text>
+            }
+            else
+            {
+                <text>hết hàng</text>
+            }
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CateFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CateFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.QuantityFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.QuantityFood)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DesFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DesFood)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new {  id = Model.IDFood  }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+<script>
+	ClassicEditor
+		.create( document.querySelector( '#editor' ), {
+			// toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+		} )
+		.then( editor => {
+			window.editor = editor;
+		} )
+		.catch( err => {
+			console.error( err.stack );
+		} );
+</script>
