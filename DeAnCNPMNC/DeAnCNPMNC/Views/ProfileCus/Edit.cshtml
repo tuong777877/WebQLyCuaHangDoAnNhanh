@@ -1,0 +1,123 @@
+﻿@model DeAnCNPMNC.Models.Customer
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/LayoutProfile.cshtml";
+}
+@using (Html.BeginForm("Edit", "ProfileCus", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    <div class="form-group">
+        @Html.LabelFor(model => model.ImageCustomer, htmlAttributes: new { @class = "control-label col-md-2" })
+    </div>
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Edit Profile</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="@Url.Content(Model.ImageCustomer)" class="img-fluid" alt="" id="previewTag" />
+                <input type="file" name="UploadImage" onchange="ChangeImage(this, document.getElementById('previewTag'))" />
+                @Html.ValidationMessageFor(model => model.ImageCustomer, "", new { @class = "text-danger" })
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3>THÔNG TIN KHÁCH HÀNG</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.AccountCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.AccountCustomer, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.AccountCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.PassCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.PassCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.PassCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.NameCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.NameCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.NameCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.PhoneCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.PhoneCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.PhoneCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.EmailCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.EmailCustomer, new { htmlAttributes = new { @readonly = "readonly", @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.EmailCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.DateOfBirthCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.DateOfBirthCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.DateOfBirthCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.AddressCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.EditorFor(model => model.AddressCustomer, new { htmlAttributes = new { @class = "form-control" } })
+                                    @Html.ValidationMessageFor(model => model.AddressCustomer, "", new { @class = "text-danger" })
+                                </span>
+                            </li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i>
+                                <strong>@Html.LabelFor(model => model.SexCustomer, htmlAttributes: new { @class = "control-label col-md-2" })</strong>
+                                <span>
+                                    @Html.RadioButtonFor(model => model.SexCustomer, "true", new { htmlAttributes = new { @class = "form-control" } }) Nam
+                                    @Html.RadioButtonFor(model => model.SexCustomer, "false", new { htmlAttributes = new { @class = "form-control" } }) Nữ
+                                    @Html.RadioButtonFor(model => model.SexCustomer, string.Empty, new { htmlAttributes = new { @class = "form-control" } }) Khác
+                                </span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.Point)</strong> <span>@Html.DisplayFor(model => model.Point)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <dt>
+                    @Html.DisplayNameFor(model => model.NameCateCustomer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NameCateCustomer)
+                </dd>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Save" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<div>
+    @Html.ActionLink("Back to Details", "Details")
+</div>
+

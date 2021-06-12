@@ -1,0 +1,68 @@
+﻿@model DeAnCNPMNC.Models.Customer
+@using DeAnCNPMNC.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/LayoutProfile.cshtml";
+}
+<!-- ======= About Section ======= -->
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+            <h2>Profile</h2>
+            </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="@Url.Content(Model.ImageCustomer)" class="img-fluid" alt="" />
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3>THÔNG TIN KHÁCH HÀNG</h3>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.AccountCustomer)</strong> <span>@Html.DisplayFor(model => model.AccountCustomer)</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.NameCustomer)</strong> <span>@Html.DisplayFor(model => model.NameCustomer)</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.PhoneCustomer)</strong> <span>@Html.DisplayFor(model => model.PhoneCustomer)</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.EmailCustomer)</strong> <span>@Html.DisplayFor(model => model.EmailCustomer)</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.DateOfBirthCustomer)</strong> <span>@Html.DisplayFor(model => model.DateOfBirthCustomer)</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.AddressCustomer)</strong> <span>@Html.DisplayFor(model => model.AddressCustomer)</span></li>
+                            <li>
+                                <i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.SexCustomer)</strong> <span>
+                                    @if (Model.SexCustomer == true)
+                                    {<b>Nam</b>}
+                                    else if (Model.SexCustomer == false)
+                                    {<b>Nữ</b> }
+                                    else
+                                    { <b>Khác</b>}
+                                </span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.Point)</strong> <span>@Html.DisplayFor(model => model.Point)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+
+                </div>
+                <dt>
+                    @Html.DisplayNameFor(model => model.NameCateCustomer)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.NameCateCustomer)
+                </dd>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End About Section -->
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AccountCustomer }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

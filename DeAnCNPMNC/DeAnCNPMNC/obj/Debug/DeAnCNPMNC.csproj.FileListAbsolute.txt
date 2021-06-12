@@ -72,8 +72,278 @@ F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.Razor.xml
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Newtonsoft.Json.xml
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Antlr3.Runtime.pdb
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csprojAssemblyReference.cache
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csproj.CoreCompileInputs.cache
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csproj.CopyComplete
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.dll
 F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.pdb
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.SqlServer.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.SqlServer.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Validation.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Validation.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.Mvc.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.Mvc.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Cookies.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Core.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Extensions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Features.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Identity.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.WebUtilities.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Bcl.AsyncInterfaces.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Caching.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Core.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Stores.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.Abstractions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.ObjectPool.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Options.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Primitives.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.WebEncoders.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Net.Http.Headers.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Win32.Registry.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Buffers.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.ComponentModel.Annotations.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Diagnostics.DiagnosticSource.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Memory.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Numerics.Vectors.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Runtime.CompilerServices.Unsafe.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.AccessControl.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Cryptography.Xml.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Permissions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Principal.Windows.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Text.Encodings.Web.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Threading.Tasks.Extensions.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.ValueTuple.dll
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Cookies.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Core.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Extensions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Features.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Identity.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.WebUtilities.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Bcl.AsyncInterfaces.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Caching.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Core.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Stores.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.Abstractions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.ObjectPool.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Options.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Primitives.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.WebEncoders.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Net.Http.Headers.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Buffers.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Diagnostics.DiagnosticSource.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Memory.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Numerics.Vectors.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Runtime.CompilerServices.Unsafe.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Text.Encodings.Web.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.Threading.Tasks.Extensions.xml
+F:\WebQlyCuaHangAnNhanh\DeAnCNPMNC\DeAnCNPMNC\bin\System.ValueTuple.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\DeAnCNPMNC.dll.config
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\DeAnCNPMNC.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\DeAnCNPMNC.pdb
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csc.exe
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csc.exe.config
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csc.rsp
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csi.exe
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csi.exe.config
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\csi.rsp
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.Managed.Core.targets
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.AppContext.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Collections.Immutable.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Console.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Globalization.Calendars.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.IO.Compression.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.IO.FileSystem.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Net.Http.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Net.Sockets.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Reflection.Metadata.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.ValueTuple.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Xml.XmlDocument.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Xml.XPath.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\vbc.exe
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\vbc.exe.config
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\vbc.rsp
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\VBCSCompiler.exe
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\roslyn\VBCSCompiler.exe.config
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Antlr3.Runtime.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.SqlServer.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Cookies.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Core.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.Internal.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Extensions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Features.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Identity.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.WebUtilities.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Bcl.AsyncInterfaces.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Caching.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.FileProviders.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Hosting.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Core.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Stores.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.Abstractions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.ObjectPool.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Options.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Primitives.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.WebEncoders.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Net.Http.Headers.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Web.Infrastructure.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Win32.Registry.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Newtonsoft.Json.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.Mvc.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Buffers.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.ComponentModel.Annotations.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Diagnostics.DiagnosticSource.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Memory.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Numerics.Vectors.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Runtime.CompilerServices.Unsafe.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.AccessControl.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Cryptography.Xml.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Permissions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Security.Principal.Windows.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Text.Encodings.Web.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Threading.Tasks.Extensions.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.ValueTuple.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Helpers.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Mvc.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Optimization.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Razor.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.Deployment.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.Razor.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Validation.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\WebGrease.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\EntityFramework.SqlServer.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Cookies.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Authentication.Core.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.Internal.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Cryptography.KeyDerivation.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.DataProtection.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Hosting.Server.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Extensions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Http.Features.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.Identity.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.AspNetCore.WebUtilities.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Bcl.AsyncInterfaces.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Caching.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Configuration.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.FileProviders.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Hosting.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Core.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Identity.Stores.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Logging.Abstractions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.ObjectPool.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Options.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.Primitives.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Extensions.WebEncoders.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.Net.Http.Headers.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\PagedList.Mvc.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Buffers.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Diagnostics.DiagnosticSource.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Memory.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Numerics.Vectors.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Runtime.CompilerServices.Unsafe.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Text.Encodings.Web.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Threading.Tasks.Extensions.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.ValueTuple.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Helpers.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Mvc.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Optimization.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.Razor.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.Deployment.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\System.Web.WebPages.Razor.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Newtonsoft.Json.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Validation.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Antlr3.Runtime.pdb
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csprojAssemblyReference.cache
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csproj.CoreCompileInputs.cache
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.csproj.CopyComplete
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.dll
+E:\HK2_Nam3\WebDaCoGiaoDien\Final CNPM\DeAnCNPMNC\DeAnCNPMNC\obj\Debug\DeAnCNPMNC.pdb

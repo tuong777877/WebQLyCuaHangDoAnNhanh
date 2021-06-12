@@ -1,0 +1,72 @@
+﻿
+@{
+    Layout = null;
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link href="/Assets/layout/css/introduce.css" rel="stylesheet" />
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .chua {
+            width:100%;
+            height:100%;
+        }
+        i {
+            float: right;
+            font-size: 30px;
+            margin-top: 30px;
+            margin-right: 65px;
+            transform: rotate(-90deg);
+            display:block;
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.5); /* Black see-through */
+            color: #f1f1f1;
+            transition: .5s ease;
+            width:100%;
+            right:0;
+            opacity: 0;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+        .chua:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="col-sm-6">
+            <div style="height:70px">
+            </div>
+            <img src="~/Assets/layout/image/hinhcookies.jpg" style="height:300px;width:600px;margin-bottom:25px" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna in sed sit eu, amet, ut aliquet. Vitae turpis at sit mauris, vitae molestie. Senectus nunc donec nibh faucibus turpis ut nunc. Sagittis sagittis, dolor ut fames pulvinar adipiscing dignissim sed tellus. Feugiat ullamcorper aliquet nisi, tempor nisl diam egestas posuere. Volutpat commodo laoreet rhoncus aliquam lacus. Vitae, tincidunt proin lorem tellus congue sed quam aliquet diam. Posuere luctus mollis orci vel amet, at integer sem quam. Id blandit vitae gravida eros</p>
+        </div>
+        <div class="col-sm-6">
+            <div style="height:70px">
+                <div class="chua">
+                    <i class="glyphicon glyphicon-align-left"></i>
+                    <div class="overlay">My Name is John</div>
+                </div>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sapien dapibus ultrices at fermentum est. Ullamcorper fames volutpat arcu scelerisque id tincidunt urna, morbi. Facilisi pharetra massa a donec sed diam imperdiet ipsum. Volutpat at sagittis pellentesque mauris id neque nunc lacus nulla. Dictum ullamcorper pharetra, eu consequat arcu, ut. Integer sit pharetra pulvinar lacinia nunc felis. Pellentesque diam egestas sed non libero. Leo a id enim eget dignissim malesuada.
+                Est blandit odio tempus eget neque eu diam in laoreet. Enim in tempus consequat id ac. Vivamus adipiscing adipiscing arcu consequat. In in at gravida eleifend non. Ac maecenas vulputate id congue nisi, mauris sed cras auctor. Eu morbi adipiscing sed ornare in diam sem. Hendrerit.
+            </p>
+            <button class="datmon">Đặt món ngay<img src="~/Assets/layout/image/menu.png" style="height:25px;width:25px;margin-left:5px;" /></button>
+            <img src="~/Assets/layout/image/anh store.jpg" style="height:300px;width:300px;margin-left:180px" />
+        </div>
+    </div>
+</body>
+</html>

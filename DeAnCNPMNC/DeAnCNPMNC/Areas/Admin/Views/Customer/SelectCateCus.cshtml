@@ -1,0 +1,4 @@
+﻿@model DeAnCNPMNC.Models.CategoryCustomer
+
+@Html.DropDownListFor(model => model.IDCateCus,
+    new SelectList(Model.ListCateCus.OrderBy(model => model.NameCateCus), "IDCateCus", "NameCateCus"), "--Select Category Customer --")

@@ -1,0 +1,124 @@
+﻿@model DeAnCNPMNC.Models.Customer
+@using DeAnCNPMNC.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>MyResume Bootstrap Template - Index</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="~/Assets/Proflie/img/favicon.png" rel="icon">
+    <link href="~/Assets/Proflie/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/Assets/Proflie/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/Assets/Proflie/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Assets/Proflie/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/Assets/Proflie/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="~/Assets/Proflie/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/Assets/Proflie/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="~/Assets/Proflie/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: MyResume - v4.3.0
+    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+</head>
+
+<body>
+    <h2>Profile</h2>
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>Profile</h2>
+                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    @Html.DisplayFor(model => model.ImageCustomer)
+                </div>
+                <div class="col-lg-8 pt-4 pt-lg-0 content">
+                    <h3>UI/UX Designer &amp; Web Developer.</h3>
+                    <p class="fst-italic">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua.
+                    </p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.AccountCustomer)</strong> <span>@Html.DisplayFor(model => model.AccountCustomer)</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.NameCustomer)</strong> <span>@Html.DisplayFor(model => model.NameCustomer)</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.PhoneCustomer)</strong> <span>@Html.DisplayFor(model => model.PhoneCustomer)</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.EmailCustomer)</strong> <span>@Html.DisplayFor(model => model.EmailCustomer)</span></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-6">
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.DateOfBirthCustomer)</strong> <span>@Html.DisplayFor(model => model.DateOfBirthCustomer)</span></li>
+                                <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.AddressCustomer)</strong> <span>@Html.DisplayFor(model => model.AddressCustomer)</span></li>
+                                <li>
+                                    <i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.SexCustomer)</strong> <span>
+                                        @if (Model.SexCustomer == true)
+                                        {<b>Nam</b>}
+                                        else if (Model.SexCustomer == false)
+                                        {<b>Nữ</b> }
+                                        else
+                                        { <b>Khác</b>}
+                                </span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>@Html.DisplayNameFor(model => model.Point)</strong> <span>@Html.DisplayFor(model => model.Point)</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p>
+                    <dt>
+                        @Html.DisplayNameFor(model => model.NameCateCustomer)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.NameCateCustomer)
+                    </dd>
+                    Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+                    Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- End About Section -->
+<!-- Vendor JS Files -->
+<script src="~/Assets/Proflie/vendor/aos/aos.js"></script>
+<script src="~/Assets/Proflie/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="~/Assets/Proflie/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="~/Assets/Proflie/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="~/Assets/Proflie/vendor/php-email-form/validate.js"></script>
+<script src="~/Assets/Proflie/vendor/purecounter/purecounter.js"></script>
+<script src="~/Assets/Proflie/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="~/Assets/Proflie/vendor/typed.js/typed.min.js"></script>
+<script src="~/Assets/Proflie/vendor/waypoints/noframework.waypoints.js"></script>
+
+<!-- Template Main JS File -->
+<script src="~/Assets/Proflie/js/main.js"></script>
+
+</body>

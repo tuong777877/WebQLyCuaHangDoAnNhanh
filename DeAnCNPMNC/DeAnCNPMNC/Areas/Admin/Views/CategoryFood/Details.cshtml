@@ -1,0 +1,34 @@
+﻿@model DeAnCNPMNC.Models.CategoryFood
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CategoryFood</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.IDCFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IDCFood)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NameCategoryFood)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NameCategoryFood)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDCFood }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

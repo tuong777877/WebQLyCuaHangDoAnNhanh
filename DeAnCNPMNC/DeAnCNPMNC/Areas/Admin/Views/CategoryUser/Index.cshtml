@@ -1,0 +1,40 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.CategoryUser>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.IDCUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameCateUser)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.IDCUser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NameCateUser)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.IDCUser }) |
+            @Html.ActionLink("Details", "Details", new { id = item.IDCUser }) @*|
+            @Html.ActionLink("Delete", "Delete", new { id = item.IDCUser })*@
+        </td>
+    </tr>
+}
+
+</table>

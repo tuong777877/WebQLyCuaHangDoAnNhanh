@@ -1,0 +1,4 @@
+﻿@model DeAnCNPMNC.Models.RoleEmp
+
+@Html.DropDownListFor(Model=>Model.ID,
+    new SelectList(Model.ListRoleEmp.OrderBy(Model=>Model.NameRE),"ID","NameRE"), "--Select Role Employee--")

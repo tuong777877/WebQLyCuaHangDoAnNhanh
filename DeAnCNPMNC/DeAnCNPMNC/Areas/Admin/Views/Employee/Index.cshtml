@@ -1,0 +1,97 @@
+﻿@model IEnumerable<DeAnCNPMNC.Models.Employee>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_layoutquanly.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ImageEmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AccountEmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PassEmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CateUser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NameEmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PhoneEmp)
+        </th>
+        <th style="display:none">
+            @Html.DisplayNameFor(model => model.EmailEmp)
+        </th>
+        <th style="display:none">
+            @Html.DisplayNameFor(model => model.DateOfBirthEmp)
+        </th>
+        <th style="display:none">
+            @Html.DisplayNameFor(model => model.AddressEmp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SexEmp)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@Url.Content(item.ImageEmp)" height="50" width="50" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AccountEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PassEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CateUser)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NameEmp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PhoneEmp)
+            </td>
+            <td style="display:none">
+                @Html.DisplayFor(modelItem => item.EmailEmp)
+            </td>
+            <td style="display:none">
+                @Html.DisplayFor(modelItem => item.DateOfBirthEmp)
+            </td>
+            <td style="display:none">
+                @Html.DisplayFor(modelItem => item.AddressEmp)
+            </td>
+            <td>
+                @if (item.SexEmp == true)
+                {<text>Nam</text>}
+            else if (item.SexEmp == false)
+            {
+                <text>Nữ</text>
+            }
+            else
+            {
+                <text>Khác</text>
+            }
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { accemp = item.AccountEmp }) |
+                @Html.ActionLink("Details", "Details", new { accemp = item.AccountEmp }) |
+                @Html.ActionLink("Delete", "Delete", new { accemp = item.AccountEmp })
+            </td>
+        </tr>
+    }
+</table>

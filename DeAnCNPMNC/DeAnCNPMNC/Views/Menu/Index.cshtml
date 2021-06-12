@@ -1,0 +1,78 @@
+﻿@*@model IEnumerable<DeAnCNPMNC.Models.Food>*@
+@using DeAnCNPMNC.Models;
+@using PagedList.Mvc;
+@model PagedList.PagedList<Food>
+@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+<section class="item content">
+    <div class="container">
+        <div class="underlined-title">
+            <div class="editContent">
+                <h1 class="text-center latestitems">MENU</h1>
+            </div>
+            <div class="wow-hr type_short">
+                <span class="wow-hr-h">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </span>
+            </div>
+            <a>
+                @{ Html.RenderAction("CategoryFoodPartial", "CategoryFoodMenu");}
+            </a>
+        </div>
+        <div class="row">
+            @foreach (var _food in Model)
+            {
+                <div class="col-md-4">
+                    <div class="productbox">
+                        <div class="fadeshop">
+                            <div class="captionshop text-center" style="display: none;">
+                                <h3>@Html.DisplayFor(modelItem => _food.NameFood)</h3>
+                                <p>
+                                    @Html.DisplayFor(modelItem => _food.DesFood)
+                                </p>
+                                @if (_food.StatusFood == true)
+                                {
+                                    <p>Số lượng : @Html.DisplayFor(modelItem => _food.QuantityFood)</p>
+                                    <p>Còn hàng</p>
+                                    <p>
+                                        <a href="/ShopingCart/AddToCart/@_food.IDFood" class="learn-more detailslearn"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                                        <a href="@Url.Action("Details", "Home", new { id = _food.IDFood })" class="learn-more detailslearn"><i class="fa fa-link"></i>Details</a>
+                                    </p>
+                                }
+                                else
+                                {
+                                    <p style="display:none">@Html.DisplayFor(modelItem => _food.QuantityFood)</p>
+                                    <p style="color:red">hết hàng</p>
+                                    <p style="display:none">
+                                        <a href="/ShopingCart/AddToCart/@_food.IDFood" class="learn-more detailslearn" style="display:none"><i class="fa fa-shopping-cart"></i> Purchase</a>
+                                        <a href="@Url.Action("Details", "Home", new { id = _food.IDFood })" class="learn-more detailslearn"><i class="fa fa-link"></i>Details</a>
+                                    </p>
+                                }
+                            </div>
+                            <span class="maxproduct"><img src="@Url.Content(_food.ImageFood)" alt="" style="height:350px; width:350px"></span>
+                        </div>
+                        <div class="product-details">
+                            <a href="#">
+                                <h1>@Html.DisplayFor(modelItem => _food.NameFood)</h1>
+                            </a>
+                            <span class="price">
+                                <span class="edd_price">@Html.DisplayFor(modelItem => _food.PriceFood)</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+    <div style="text-align:center">
+        Trang @(Model.PageCount<Model.PageNumber ? 0 : Model.PageNumber) / @Model.PageCount
+        <div>
+            @Html.PagedListPager(Model, page => Url.Action("Index", new { page = page }))
+        </div>
+        <link href="~/Content/PagedList.css" rel="stylesheet" type="text/css" />
+    </div>
+</section>
+<br />
