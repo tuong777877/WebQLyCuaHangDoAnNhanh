@@ -8,5 +8,5 @@
 <li>Website Giúp khách hàng có thể đặt những món ăn yêu thích mà không cần phải tự mình đi mua mà chỉ cần ngồi yên một chỗ chờ rồi tận hưởng những bữa ăn ngon và đầy đủ chất dinh dưỡng</li>
 
 ## Công nghệ sử dụng:
-<li> Asp .net framework </li>
+<li> Asp .NET Framework </li>
 <li> My SQL server </li>
